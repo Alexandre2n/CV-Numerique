@@ -1,0 +1,254 @@
+/* Crée par Alexandre Dehaine*/
+h1 {
+  color: bisque;
+}
+body {
+  display: grid;
+  grid-template-columns: 50px auto 50px;
+  grid-template-rows: 83px auto 83px;
+  grid-column-gap: 0px;
+  grid-row-gap: 30px;
+  grid-template-areas:
+    "Header Header Header"
+    ". Main chopper"
+    "Footer Footer Footer";
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+html {
+  background-color: rgb(145, 145, 145);
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  color: white;
+  font-size: 17px;
+  text-align: justify;
+  font-family: arial;
+}
+main {
+  position: relative;
+  text-shadow: 1px 1px 2px black;
+  padding: 30px;
+  grid-area: Main;
+  margin-right: 0px;
+}
+main::-webkit-scrollbar {
+  display: none;
+}
+.logo {
+  position: relative;
+  width: 40%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+.poster {
+  float: right;
+  margin-left: 30px;
+  width: 10%;
+}
+.poster_photo {
+  float: right;
+  margin-left: 30px;
+  width: 10%;
+  transition: width 0.25s, visibility 0.25s ease-in;
+
+}
+.poster_photo:hover {
+  width: 20%;
+}
+.Formation{
+  
+  font-style: italic;
+  font-weight: bold;
+  margin-top: -5px;
+}
+nav {
+  color: white;
+  font-size: large;
+  text-decoration: none;
+  width: 100%;
+  top: 20px;
+  height: 150px;
+  overflow: scroll;
+  background-color: rgb(65, 65, 65);
+  border: double rgb(32, 32, 32);
+  clear: both;
+}
+nav::-webkit-scrollbar {
+  display: none;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+}
+nav a:hover {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: x-large;
+}
+.soft:hover {
+  font-size: large;
+}
+#Hard-Skills {
+  clear: both;
+}
+.info,
+.Hard-Skills {
+  color: white;
+  font-size: small;
+  text-align: justify;
+}
+header {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 83px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid azure;
+  grid-area: Header;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto;
+  grid-template-rows: auto;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  grid-template-areas: ". b1 . b2 . b3 . b4 . b5 .";
+}
+header a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  transition: all ease 0.5s;
+  position: relative;
+  padding: 10px;
+}
+header a:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+footer {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  height: 83px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  justify-content: space-between;
+  border-top: 2px solid azure;
+  display: grid;
+  grid-template-columns: 10% auto 10% auto 10% auto 10%;
+  grid-template-rows: 83px;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  grid-template-areas: ". Email . Num . Haut .";
+}
+footer a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  transition: all ease 0.5s;
+  position: relative;
+  padding: 10px;
+}
+footer a:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.b1 {
+  text-align: center;
+  text-decoration: none;
+  color: azure;
+  grid-area: b1;
+}
+.b2 {
+  text-align: center;
+  text-decoration: none;
+  color: azure;
+  grid-area: b2;
+}
+.b3 {
+  text-align: center;
+  text-decoration: none;
+  color: azure;
+  grid-area: b3;
+}
+.b4 {
+  text-align: center;
+  text-decoration: none;
+  color: azure;
+  grid-area: b4;
+}
+.b5 {
+  text-align: center;
+  text-decoration: none;
+  color: azure;
+  grid-area: b5;
+}
+.button3 {
+  text-align: center;
+  text-decoration: none;
+  color: azure;
+  grid-area: Email;
+}
+.button4 {
+  text-align: center;
+  text-decoration: none;
+  color: azure;
+  grid-area: Num;
+}
+.button5 {
+  text-align: center;
+  text-decoration: none;
+  color: azure;
+  grid-area: Haut;
+}
+h2 {
+  color: aquamarine;
+  border-bottom: 3px solid aqua;
+  clear: both;
+}
+li.menu-item:not(:last-child) { 
+  margin-bottom: 3px;  
+}
+.Saga_text {
+  color: white;
+  font-size: large;
+  text-align: justify;
+}
+@media only screen and (700px<=width) {
+  .info,
+  .Hard-Skills {
+    color: white;
+    font-size: large;
+    text-align: justify;
+  }
+  body {
+    grid-template-columns: 100px auto 100px;
+  }
+  .poster {
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (1000px<=width) {
+  .intro {
+    font-size: 28px;
+  }
+  nav {
+    width: 40%;
+  }
+  body {
+    grid-template-columns: 15% auto 15%;
+  }
+}
